@@ -44,27 +44,27 @@ All computation is local and deterministic.
 
 **Key Features**
 
-    **Cognitive State Modeling**    
+  **Cognitive State Modeling**    
         Persistent state across sessions
         Multiple dimensions (not just sentiment)
         Gradual recovery instead of instant resets
         Time-based decay using wall-clock time
-    **Rule-Based NLP (Offline)**  
+  **Rule-Based NLP (Offline)**  
         Keyword-based signal detection
         Negation handling ("not stressed", "don't feel tired")
         Semantic exceptions (e.g., "don't feel like" → resistance)
         Conservative, safety-first interpretation
-    **Decision Intelligence**
+  **Decision Intelligence**
         Burnout and resistance prioritized over productivity
         Extreme-stress safety override
         Study styles adapt to cognitive readiness
         Music recommendations are vibes, not copyrighted tracks
-    **Explainable AI (XAI)**
+  **Explainable AI (XAI)**
         Every recommendation includes a clear explanation:
         Which signals were detected
         What cognitive state influenced the decision
         Why a specific study mode was chosen
-    **Adaptive Feedback (No ML)**
+  **Adaptive Feedback (No ML)**
         User feedback (“Did this help?”)
         Thresholds adjust gradually
         Fully offline reinforcement logic
@@ -86,18 +86,7 @@ This system requires:
 A user can be positive but exhausted or negative but highly focused.
 Sentiment analysis cannot model this.
 
-📁 Project Structure
-mood-engine/
-├── cognitive_state.py      # Cognitive model + decay + recovery
-├── text_analyzer.py        # Rule-based NLP + negation handling
-├── decision_engine.py      # Priority-based decision logic
-├── explanation.py          # Explainable reasoning
-├── feedback.py             # Adaptive personalization
-├── main.py                 # CLI entry point
-├── data/
-│   ├── user_state.json
-│   └── feedback.json
-└── README.md
+<img width="692" height="364" alt="image" src="https://github.com/user-attachments/assets/f5adf0ef-b8fd-4181-8416-41d38432d53b" />
 
 **How to Run**
 python main.py
@@ -112,6 +101,7 @@ The system will respond with:
   Feedback prompt
 
 **Example Output**
+
 Detected signals: ['high_stress', 'resistance']
 
 Recommendations:
